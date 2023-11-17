@@ -3,15 +3,15 @@ package blockchain
 import (
 	"fmt"
 	"github.com/ethereum/go-ethereum/common"
+	"github.com/ethereum/go-ethereum/ethclient"
 	intoCityNode "graph-service/binding"
 	"graph-service/log"
 	"math/big"
 )
 
-func ApproveTox(contractAddress string) {
-	Cli := Client(SwapConfig)
-	_, auth := GetAuth(Cli)
-	tox, err := intoCityNode.NewBgtToken(common.HexToAddress(SwapConfig.ToxAddress), Cli)
+func ApproveTox(contractAddress string, cli *ethclient.Client, chanId int64) {
+	_, auth := GetAuth(cli, chanId)
+	tox, err := intoCityNode.NewBgtToken(common.HexToAddress(contractAddress), cli)
 	if err != nil {
 		log.Logger.Sugar().Error(err)
 		return

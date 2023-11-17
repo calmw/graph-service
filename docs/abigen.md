@@ -4,16 +4,6 @@
 
 #### 生成userLocation合约代码
 
-- abigen --abi ../abi/IntoUserLocation.json --pkg intoCityNode --type UserLocation --out ./binding/userLocation.go
+- abigen --abi ./abi/NewbieTask.json --pkg intoBinding --type NewbieTask --out ./binding/NewbieTask.go
+- abigen --abi ./abi/SyncContact.json --pkg intoBinding --type SyncContact --out ./binding/SyncContact.go
 
-#### 生成cityPioneer合约代码
-
-- abigen --abi ../abi/IntoCityPioneer.json --pkg intoCityNode --type CityPioneer --out ./binding/cityPioneer.go
-
-#### 生成city合约代码
-
-- abigen --abi ../abi/IntoCity.json --pkg intoCityNode --type City --out ./binding/city.go
-
-#### 生成swap合约代码
-
-- abigen --abi ../abi/swap.json --pkg intoSwap --type Swap --out ./binding/swap.go

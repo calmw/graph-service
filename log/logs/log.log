@@ -249,3 +249,5 @@
 {"level":"info","time":"2023-10-16T12:31:48.892+0800","line":"db/mysql.go:61","msg":"SELECT * FROM `task_status` WHERE task_type=1 ORDER BY `task_status`.`id` LIMIT 1","serviceName":"into"}
 {"level":"info","time":"2023-10-16T12:36:49.325+0800","line":"db/mysql.go:61","msg":"SELECT * FROM `task_status` WHERE task_type=1 ORDER BY `task_status`.`id` LIMIT 1","serviceName":"into"}
 {"level":"info","time":"2023-10-16T12:41:49.041+0800","line":"db/mysql.go:61","msg":"SELECT * FROM `task_status` WHERE task_type=1 ORDER BY `task_status`.`id` LIMIT 1","serviceName":"into"}
+{"level":"info","time":"2023-10-16T18:26:38.466+0800","line":"db/mysql.go:12","msg":"Init Mysql","serviceName":"into"}
+{"level":"info","time":"2023-10-16T18:26:38.862+0800","line":"db/mysql.go:12","msg":"Init Mysql","serviceName":"into"}
